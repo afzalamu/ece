@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GATE ECE Preparation Tracker</title>
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H4WKBLTVE4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-H4WKBLTVE4');
+</script>
+
+</head>
+<body class="bg-gray-100 p-6 font-sans">
+<h1 class="text-3xl font-bold text-center mb-6">📊 GATE ECE Preparation Tracker By PrepFusion </h1>
+
+<!-- Total Preparation Completion -->
+<div class="bg-white shadow-md rounded-lg p-4 mb-6">
+  <h2 class="text-xl font-semibold">Total Preparation Completion <span id="total-progress">0%</span></h2>
+  <div class="w-full bg-gray-200 rounded-full h-6 mb-2">
+    <div id="bar-total" class="bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 h-6 rounded-full" style="width:0%"></div>
+  </div>
+</div>
+
+<!-- Section 1 -->
+<div class="bg-white shadow-md rounded-lg p-4 mb-4">
+  <h2 class="text-xl font-semibold text-blue-600">Section 1 : Syllabus Completion <span id="sec1-progress">0%</span></h2>
+  <div class="w-full bg-gray-200 rounded-full h-4 mb-2">
+    <div id="bar-sec1" class="bg-blue-500 h-4 rounded-full" style="width:0%"></div>
+  </div>
+  
+  <!-- Section 1 Topics -->
+  <details class="mb-2"><summary class="cursor-pointer font-medium">Network Analysis (4.8%)</summary>
+    <ul class="ml-4 list-disc">
+      <li><input type="checkbox" class="sec1-topic" data-weight="1.2"> Basics of Networks & Network Theorems (1.2%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="1.8"> Transient Analysis (1.8%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.6"> AC Circuits - Phasor Diagram, Resonance & Complex Power (0.6%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="1.2"> Two Port Networks (1.2%)</li>
+    </ul>
+  </details>
+  
+  <details class="mb-2"><summary class="cursor-pointer font-medium">Signals & Systems (6%)</summary>
+    <ul class="ml-4 list-disc">
+      <li><input type="checkbox" class="sec1-topic" data-weight="1.5"> Basics of Signals & Systems (1.5%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.5"> Continuous Time Fourier Series (0.5%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="1"> Continuous Time Fourier Transforms (1%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="1"> Laplace Transforms (1%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="1"> Z Transforms (1%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="1"> DTFS, DTFT, DFT, FFT (1%)</li>
+    </ul>
+  </details>
+
+  <details class="mb-2"><summary class="cursor-pointer font-medium">Analog Electronics (6%)</summary>
+    <ul class="ml-4 list-disc">
+      <li><input type="checkbox" class="sec1-topic" data-weight="1"> Diode Circuits (1%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="2"> MOSFETs (2%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="2"> OpAmps (2%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="1"> BJTs (1%)</li>
+    </ul>
+  </details>
+
+  <details class="mb-2"><summary class="cursor-pointer font-medium">Digital Electronics (4.8%)</summary>
+    <ul class="ml-4 list-disc">
+      <li><input type="checkbox" class="sec1-topic" data-weight="1"> Basics of Boolean Algebra & Logic Gates (1%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.4"> Basics of Number Systems (0.4%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.8"> Combinational Circuits (0.8%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="1"> Sequential Circuits (1%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="1"> ADC & DAC (1%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.4"> CMOS Logic Implementation (0.4%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.2"> COA (0.2%)</li>
+    </ul>
+  </details>
+
+  <details class="mb-2"><summary class="cursor-pointer font-medium">Control System (4.8%)</summary>
+    <ul class="ml-4 list-disc">
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.2"> Basics of Control System (0.2%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.2"> Signal Flow Graph & Block Diagram Reduction (0.2%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.5"> Time Response Analysis (0.5%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.4"> Routh-Hurwitz Criterion (0.4%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.4"> Root Locus Analysis (0.4%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.2"> Frequency Response of 2nd Order Systems (0.2%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.6"> Polar Plot (0.6%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.6"> Nyquist Plot (0.6%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.6"> Bode Plots (0.6%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.6"> State Space Analysis (0.6%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.5"> Controllers and Compensators (0.5%)</li>
+    </ul>
+  </details>
+
+  <details class="mb-2"><summary class="cursor-pointer font-medium">Engineering Mathematics (7.8%)</summary>
+    <ul class="ml-4 list-disc">
+      <li><input type="checkbox" class="sec1-topic" data-weight="1.8"> Linear Algebra (1.8%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.5"> Limits, Continuity & Differentiability (0.5%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="1.25"> Differential Calculus (1.25%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="1.25"> Integral Calculus (1.25%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.3"> Differential Equations (0.3%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.45"> Vector Calculus (0.45%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.45"> Complex Variable Analysis (0.45%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="1.8"> Probability and Statistics (1.8%)</li>
+    </ul>
+  </details>
+
+  <details class="mb-2"><summary class="cursor-pointer font-medium">General Aptitude (9%)</summary>
+    <ul class="ml-4 list-disc">
+      <li><input type="checkbox" class="sec1-topic" data-weight="1.6"> Verbal Aptitude (1.6%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="3.8"> Quantitative Aptitude (3.8%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="2.4"> Analytical Aptitude (2.4%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="1.2"> Spatial Aptitude (1.2%)</li>
+    </ul>
+  </details>
+
+  <details class="mb-2"><summary class="cursor-pointer font-medium">Electromagnetic Field Theory (4.2%)</summary>
+    <ul class="ml-4 list-disc">
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.5"> Vector Algebra, Coordinate system & Calculus (0.5%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="1"> Maxwell's Equation & EM waves (1%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="1.5"> Transmission Lines & Smith Chart (1.5%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.7"> Waveguides (0.7%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.5"> Antenna Theory (0.5%)</li>
+    </ul>
+  </details>
+
+  <details class="mb-2"><summary class="cursor-pointer font-medium">Electronic Devices & Circuits (5.4%)</summary>
+    <ul class="ml-4 list-disc">
+      <li><input type="checkbox" class="sec1-topic" data-weight="2.16"> Basic Semiconductor Physics (2.16%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="1.08"> PN Junction & Special Purpose Diodes (1.08%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="0.54"> Bipolar Junction Transistors (0.54%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="1.62"> MOS Cap & MOS Physics (1.62%)</li>
+    </ul>
+  </details>
+
+  <details class="mb-2"><summary class="cursor-pointer font-medium">Communication Systems (7.2%)</summary>
+    <ul class="ml-4 list-disc">
+      <li><input type="checkbox" class="sec1-topic" data-weight="1.5"> Random Variable & Random Process (1.5%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="2.5"> Digital Communication Systems (2.5%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="1.8"> Information Theory (1.8%)</li>
+      <li><input type="checkbox" class="sec1-topic" data-weight="1.4"> Analog Communication Systems (1.4%)</li>
+    </ul>
+  </details>
+</div>
+
+<!-- Section 2 -->
+<div class="bg-white shadow-md rounded-lg p-4 mb-4">
+<h2 class="text-xl font-semibold text-green-600">Section 2 : Previous Year Questions <span id="sec2-progress">0%</span></h2>
+<div class="w-full bg-gray-200 rounded-full h-4 mb-2">
+  <div id="bar-sec2" class="bg-green-500 h-4 rounded-full" style="width:0%"></div>
+</div>
+<ul class="ml-4 list-disc">
+  <li><input type="checkbox" class="sec2-topic" data-weight="2"> Network Analysis (2%)</li>
+  <li><input type="checkbox" class="sec2-topic" data-weight="2"> Signals & Systems (2%)</li>
+  <li><input type="checkbox" class="sec2-topic" data-weight="2"> Control Systems (2%)</li>
+  <li><input type="checkbox" class="sec2-topic" data-weight="2"> Analog Electronics (2%)</li>
+  <li><input type="checkbox" class="sec2-topic" data-weight="2"> Digital Electronics & COA (2%)</li>
+  <li><input type="checkbox" class="sec2-topic" data-weight="2"> Engineering Mathematics (2%)</li>
+  <li><input type="checkbox" class="sec2-topic" data-weight="2"> General Aptitude (2%)</li>
+  <li><input type="checkbox" class="sec2-topic" data-weight="2"> Electromagnetic Field Theory (2%)</li>
+  <li><input type="checkbox" class="sec2-topic" data-weight="2"> Electronic Devices & Circuits (2%)</li>
+  <li><input type="checkbox" class="sec2-topic" data-weight="2"> Communication Systems (2%)</li>
+</ul>
+</div>
+
+<!-- Section 3 -->
+<div class="bg-white shadow-md rounded-lg p-4 mb-4">
+<h2 class="text-xl font-semibold text-purple-600">Section 3 : Test Series <span id="sec3-progress">0%</span></h2>
+<div class="w-full bg-gray-200 rounded-full h-4 mb-2">
+  <div id="bar-sec3" class="bg-purple-500 h-4 rounded-full" style="width:0%"></div>
+</div>
+<ul class="ml-4 list-disc">
+  <li><input type="checkbox" class="sec3-topic" data-weight="1"> Network Analysis Tests (1%)</li>
+  <li><input type="checkbox" class="sec3-topic" data-weight="1"> Signals & Systems Tests (1%)</li>
+  <li><input type="checkbox" class="sec3-topic" data-weight="1"> Control Systems Tests (1%)</li>
+  <li><input type="checkbox" class="sec3-topic" data-weight="1"> Analog Electronics Tests (1%)</li>
+  <li><input type="checkbox" class="sec3-topic" data-weight="1"> Digital Electronics & COA Tests (1%)</li>
+  <li><input type="checkbox" class="sec3-topic" data-weight="1"> Engineering Mathematics Tests (1%)</li>
+  <li><input type="checkbox" class="sec3-topic" data-weight="1"> General Aptitude Tests (1%)</li>
+  <li><input type="checkbox" class="sec3-topic" data-weight="1"> Electromagnetic Field Theory Tests (1%)</li>
+  <li><input type="checkbox" class="sec3-topic" data-weight="1"> Electronic Devices & Circuits Tests (1%)</li>
+  <li><input type="checkbox" class="sec3-topic" data-weight="1"> Communication Systems Tests (1%)</li>
+  <li><input type="checkbox" class="sec3-topic" data-weight="2"> Full Length - 1 (2%)</li>
+  <li><input type="checkbox" class="sec3-topic" data-weight="2"> Full Length - 2 (2%)</li>
+  <li><input type="checkbox" class="sec3-topic" data-weight="2"> Full Length - 3 (2%)</li>
+  <li><input type="checkbox" class="sec3-topic" data-weight="2"> Full Length - 4 (2%)</li>
+  <li><input type="checkbox" class="sec3-topic" data-weight="2"> Full Length - 5 (2%)</li>
+</ul>
+</div>
+<!-- Footer -->
+<footer class="mt-8 text-center text-gray-400">
+  Made with ❤️ for the students of PrepFusion. Visit <a href="https://PrepFusion.in" target="_blank" class="text-indigo-400 underline">PrepFusion.in</a> for comprehensive courses.
+</footer>
+<script>
+function updateProgress(section) {
+  let total = 0;
+  let checkboxes = document.querySelectorAll(`.${section}-topic`);
+  checkboxes.forEach((cb, index) => {
+    if(cb.checked) total += parseFloat(cb.dataset.weight);
+
+    // Track checkbox clicks in Google Analytics
+    cb.addEventListener('change', () => {
+      gtag('event', 'checkbox_click', {
+        'event_category': section,
+        'event_label': cb.parentElement.innerText.trim(),
+        'value': cb.checked ? 1 : 0
+      });
+    });
+  });
+  document.getElementById(`sec${section.charAt(3)}-progress`).innerText = total + '%';
+  document.getElementById(`bar-sec${section.charAt(3)}`).style.width = total + '%';
+  checkboxes.forEach((cb, index) => localStorage.setItem(section + index, cb.checked));
+  updateTotal();
+}
+
+function updateTotal() {
+  const sec1 = parseFloat(document.getElementById('sec1-progress').innerText) || 0;
+  const sec2 = parseFloat(document.getElementById('sec2-progress').innerText) || 0;
+  const sec3 = parseFloat(document.getElementById('sec3-progress').innerText) || 0;
+  const total = sec1 + sec2 + sec3;
+  document.getElementById('total-progress').innerText = total + '%';
+  document.getElementById('bar-total').style.width = total + '%';
+}
+
+['sec1','sec2','sec3'].forEach(section => {
+  let checkboxes = document.querySelectorAll(`.${section}-topic`);
+  checkboxes.forEach((cb, index) => {
+    const saved = localStorage.getItem(section + index);
+    if(saved === 'true') cb.checked = true;
+    cb.addEventListener('change', () => updateProgress(section));
+  });
+  updateProgress(section);
+});
+</script>
+</body>
+</html>
+
+
